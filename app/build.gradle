@@ -22,7 +22,12 @@ dependencies {
     // This dependency is used by the application.
     implementation libs.guava
 }
-
+gradleEnterprise {
+    buildScan {
+        termsOfServiceUrl = "https://gradle.com/terms-of-service"
+        termsOfServiceAgree = "yes"
+    }
+}
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
